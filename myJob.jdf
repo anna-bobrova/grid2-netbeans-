@@ -1,0 +1,16 @@
+job:
+	name: sum
+	init:
+		put text1.txt
+		put text2.txt
+		put Text.class Text.class
+task: remote: java grid.Sum 0
+	  final: get out0.txt out0.txt
+task: remote: java grid.Sum 1
+	  final: get out1.txt out1.txt
+task: remote: java grid.Sum 2
+	  final: get out2.txt out2.txt
+task: remote: java grid.Sum 3
+	  final: get out3.txt out3.txt
+task: remote: java grid.Sum 4
+	  final: get out4.txt out4.txt
